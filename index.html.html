@@ -1,0 +1,254 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- LIB CAROUSEL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- METRICAS FAST SHOP -->
+<link rel="stylesheet" href="https://fastshopwr-a.akamaihd.net/spot/metrics/metrics.css">
+
+<style>
+    #corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: 'Open Sans', sans-serif; color: #000000;overflow: hidden; background:#FFFFFF; text-align: center;}
+/* TEXTO TOPO */
+#corpo .texto-topo{ text-align: center;}
+#corpo .texto-topo img{ width:30%; margin-top:5%;}
+
+#corpo .texto-topo P { font-size:1.4vw; width:24%; margin:2% auto 2%;}
+#corpo .texto-topo h2.sub-titulo{ font-size:2.4vw; font-weight:700;}
+#corpo .texto-topo P.bold { font-size:1.6vw; font-weight:700;} 
+/* BANNER */
+#corpo .banner_artista::before{ padding: 0; padding-top: 49.0625%;}
+#corpo .banner_artista{position: relative;display: block;width: 100%; margin: 0 auto;}
+#corpo .banner_artista picture{display: block;width: 100%;}
+#corpo .banner_artista picture img{position: relative;display: block;width: 97%; margin: 0 auto}
+#corpo .banner_artista .texto-artista p{ font-size:1.2vw; margin: 4% auto 0;}
+#corpo .banner_artista .texto-artista h2{ font-size:1.6vw; margin-bottom: 3%;}
+#corpo .banner_artista .texto-artista hr{ width:50%; margin:0 auto;}
+/* SEÇÃO BENEFICOS */
+#corpo .beneficios{width: 76%; margin:0 auto}
+#corpo .beneficios p{ font-size:1.6vw; width:85%; margin:2% auto;}
+#corpo .beneficios h2{ font-size:2vw; margin:4% 0 5%; font-weight:400;}
+#corpo .beneficios-card::before{ padding: 0; padding-top: 49.0625%;}
+#corpo .beneficios-card picture{ width: 55%; margin: 0 auto;}
+#corpo .beneficios .orientacao{ font-size:1.2vw; width:59%; margin: 4% auto 3%;}
+/* VIDEO */
+#corpo .video{margin-top: 5%; }
+#corpo .video::before{ padding: 0; padding-top: 45.0625%;}
+ .flex_wrapper {
+        /* This wrapper controls alignment as needed  */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+
+    .flex_wrapper .size_wrapper {
+        width: 80%; /* Controls size of the video based on size of the parent */
+        margin-bottom: -15%; /* Or any other value as needed */
+    }
+
+    .flex_wrapper .size_wrapper .video_wrapper {
+        position: relative;
+        margin: 0 auto;
+        height: 0;
+        width: 31%;
+        padding-bottom: 56.25%; /* 16:9 */
+    }
+    
+    .flex_wrapper .size_wrapper .video_wrapper .spot_video {
+        margin: 0 auto 50px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+    }
+
+/* SEÇÃO INVESTIMENTO */
+#corpo .investimento-tabela::before { padding-top: 139.0625%; }
+#corpo .investimento-tabela img{ width:50%;}
+#corpo .investimento-link::before { padding-top: 63.0625%; }
+#corpo .investimento picture{ position: absolute;}
+#corpo .investimento-link a{ position: absolute; width: 20%; height:7%; background-color: transparent; bottom: 51%; left: 67%;}
+/* SOBRE A ARTISTA */
+#corpo .sobre-artista::before{ padding: 0; padding-top: 59.0625%;}
+
+#corpo .sobre-artista picture{ width:94%; margin:0 auto; }
+#corpo .sobre-artista h2{ font-size: 2.3vw; margin: 7% auto 6%; font-weight:400;}#corpo .sobre-artista a{ position: absolute; width: 17%; height:7%; background-color: transparent; bottom: 25%; left: 50%;}
+/* CARROUSSEL SEVIÇOS */
+#corpo .carroussel-servicos::before{ padding: 0; padding-top: 65.0625%;}
+#corpo .carroussel-servicos{ margin-bottom:10%; position:relative;}
+#corpo .carroussel-servicos .texto-carrossel{ margin-top:6%;}
+#corpo .carroussel-servicos .texto-carrossel img{ width:26vw; margin:3.5%}
+#corpo .carroussel-servicos .texto-carrossel p{ font-size: 1.6vw; margin: -2.5vw 0 8%; padding:0;}
+#corpo .todos-servicos{    width:100%;    }
+#corpo .todos-servicos .grupo-servicos picture { position: relative;}
+#corpo .todos-servicos .grupo-servicos{    display: flex;    width: 95%;    margin: 0 auto;    justify-content: space-between; gap:2%;}
+#corpo .todos-servicos .grupo-servicos picture a{ position: absolute; width: 36%; height: 9%; background-color: transparent; bottom: 0%; left: 0%;}
+
+/* ----Responsividade media query---- */
+@media screen and (min-width: 1601px){
+#corpo .texto-topo h2.sub-titulo{font-size: 44px;}
+#corpo .texto-topo P.bold { font-size: 32px;}
+#corpo .beneficios h2 { font-size: 41px;}
+#corpo .sobre-artista h2 { font-size: 35px;}
+}
+
+@media screen and (max-width: 1100px) {
+/* LOGO FASTSHOP TOPO */
+#corpo .texto-topo img{ width:34%;}
+/* TEXTO TOPO */
+#corpo .texto-topo P{ font-size:2vw; }
+#corpo .texto-topo h2.sub-titulo{ font-size:4.2vw; }
+#corpo .texto-topo P.bold{ font-size:2.3vw; width:80% }
+/* BANNER TOPO */
+#corpo .banner_artista::before { padding-top: 81.0625%;}
+#corpo .banner_artista .texto-artista p,
+#corpo .banner_artista .texto-artista h2{ font-size:3vw;}
+#corpo .banner_artista .texto-artista hr { width: 86%;}
+/* SEÇAO BENEFICIOS */
+#corpo .beneficios p { font-size: 3.2vw; width: 104%; margin: 2% auto; line-height: 5.5vw;}
+#corpo .beneficios h2 { font-size: 3vw; margin:5% auto; font-weight: 400;}
+#corpo .beneficios-card::before { padding-top: 84%;} 
+#corpo .beneficios .orientacao{ font-size:2vw; width: 67%; margin: 5% auto 10%; line-height:3vw; }
+/* SEÇÃO VIDEO */
+#corpo .video{ margin:7% auto;}
+
+#corpo .video::before {
+    padding: 0;
+    padding-top: 79.0625%;
+}
+.flex_wrapper .size_wrapper .video_wrapper {
+        width: 54%;
+        padding-bottom: 98%;
+    }
+/* SEÇAÕ INVESTIMENTO */
+#corpo .investimento-tabela::before { padding-top: 178.0625%; }
+#corpo .investimento-link::before { padding-top: 63.0625%; }#corpo .investimento-link a { width: 27%; bottom:46%; height:15%; left: 63%;} 
+/* SOBRE A ARTISTA */
+#corpo .sobre-artista::before { padding-top: 107.0625%;}
+#corpo .sobre-artista h2 { font-size: 2.9vw;}
+/* seçao carrossel */
+#corpo .todos-servicos .grupo-servicos {    display: flex;    width: 100%;    margin: 0 auto;    gap: 2%;    justify-content: space-between;}
+
+}
+</style>
+
+<!-- INICIO LP -->
+<div id="corpo">
+    <div class="texto-topo">
+        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/image-logo-fast-shop.png" alt="logo Fast Shop" srcset="">
+        <p>Serviços que cuidam de você em todos os momentos.</p>
+        <h2 class="sub-titulo">Cuidar é: <br>
+        Conectar a sua casa ao seu estilo de vida</h2>
+        <p class="bold">Casa Inteligente</p>
+    </div>
+    <div class="wrapper-aspect-ratio banner_artista">
+        <picture class="inner">
+            <source media="(max-width: 1100px)"
+                srcset="files/banner_topo_mobile.png">
+            <img width="100%" height="auto"
+                src="files/banner_topo.png"
+                alt="banner artista Arthur Ortega">
+        </picture>
+        <div class="texto-artista">
+            <p>Arte por</p>
+            <h2>Arthur Ortega</h2>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="beneficios">
+        <p class="texto-inicio">Casa não deve ser apenas um endereço. Casa deve começar com letra maiúscula, deve ter a nossa personalidade, a nossa
+        história, os nossos rastros, ser refúgio e, ao mesmo tempo, ser reencontro com a nossa essência.
+        </p>
+        <p>
+        O serviço Casa Inteligente é um cuidado da Fast Shop para que você tenha essa relação acolhedora com a sua Casa.
+        </p>
+        <p>Com esse serviço, você poderá ter mais tempo livre, e usar essas horas para construir uma relação mais profunda com a
+        sua Casa, de mais acolhimento e intimidade, pois toda a sua rotina de tarefas e obrigações diárias serão automatizadas
+        para que aconteçam sem precisar do seu esforço ou do seu tempo.</p>
+        <p>Basta conectar os produtos inteligentes a uma assistente virtual e automatizar a sua rotina em casa. Da hora em que você
+        acorda até a hora em que vai dormir, tudo pode ser programado.</p>
+        <p>Aproveite a inteligência Fast Shop para economizar o seu tempo e ganhar mais tempo de qualidade na relação com você
+        mesmo, com sua família e com ela: a sua Casa.</p>
+        <h2>Quais são os benefícios?</h2>
+        <div class="wrapper-aspect-ratio beneficios-card">
+            <picture class="inner">
+                <source media="(max-width: 1100px)" srcset="files/image-card-beneficios-mobile.png">
+                <img width="100%" height="auto" src="files/image_card_beneficios_ok.png" alt="seção de beneficios Fast Shop">
+            </picture>
+        </div>
+      
+    </div>
+
+<div class="wrapper-aspect-ratio video">
+    <div class="flex_wrapper inner">
+        <div class="size_wrapper">
+            <div class="video_wrapper">
+                <iframe class="spot_video" src="https://www.youtube.com/embed/hCd99Dvvy7A " frameborder="0"
+                    allowfullscreen></iframe>
+
+            </div>
+            <!-- If more than one video, duplicate this div (class="size-wrapper") -->
+        </div>
+    </div>
+</div>
+
+    
+        <div class="wrapper-aspect-ratio sobre-artista">
+            <picture class="inner">
+                <h2>Sobre o artista</h2>
+                <source media="(max-width: 1100px)"
+                    srcset="files/imagem-sobre-artista-mobile.png">
+                <img width="100%" height="auto"
+                    src="files/sobre-artista.png"
+                    alt="banner artista Arthur Ortega">
+            </picture>   
+            <a href="#"></a>    
+        </div>
+
+<div class="wrapper-aspect-ratio carroussel-servicos">
+    <div class="inner">
+        <div class="texto-carrossel">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/image-logo-fast-shop.png" alt="logo Fast Shop">
+            <p>Descubra todos nossos cuidados</p>
+        </div>
+     
+        <div class="todos-servicos">
+            <div class="grupo-servicos">
+                <picture>
+                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-02/files/servico_04.png" alt="card sobre serviços Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/services_instalacao"></a>
+                </picture>
+                <picture>
+                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_03.png" alt="card sobre serviços Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/services_suporte"></a>
+                </picture>
+                <picture>
+                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_04.png" alt="card sobre serviços Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/services_garantia"></a>
+                </picture>
+                <picture>
+                    <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/06/lp-01/files_v3/servico_05.png" alt="card sobre serviços Fast Shop">
+                    <a href="https://www.fastshop.com.br/web/a/services_seguro"></a>
+                </picture>
+               
+               
+            </div>
+        </div>
+
+    </div>
+</div>
+
+   
